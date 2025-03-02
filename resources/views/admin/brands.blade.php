@@ -34,12 +34,13 @@
                             </div>
                         </form>
                     </div>
-                    <a class="tf-button style-1 w208" href="add-brand.html"><i
+                    <a class="tf-button style-1 w208" href="{{route('admin.brands.add')}}"><i
                             class="icon-plus"></i>Add new</a>
                 </div>
                 <div class="wg-table table-all-user">
                     <div class="table-responsive">
                         <table class="table table-striped table-bordered">
+                            {{-- @if Session::has('status')<p class="alert alert-success">{{Session::get('status')}}</p> @endif --}}
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -55,7 +56,7 @@
                                     <td>{{$brand->id}}</td>
                                     <td class="pname">
                                         <div class="image">
-                                            <img src="{{assets('uploads/brand')}}/{{$brand->image}}" alt="{{$brand->slug}}" class="image">
+                                            <img src="{{asset('uploads/brand')}}/{{$brand->image}}" alt="{{$brand->name}}" class="image">
                                         </div>
                                         <div class="name">
                                             <a href="#" class="body-title-2">{{$brand->name}}</a>
@@ -89,7 +90,7 @@
                 </div>
             </div>
         </div>
-   
+
 
 
 @endsection
