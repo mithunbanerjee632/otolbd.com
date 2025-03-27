@@ -14,31 +14,31 @@
                     <i class="icon-chevron-right"></i>
                 </li>
                 <li>
-                    <a href="{{route('admin.brands')}}">
-                        <div class="text-tiny">Brands</div>
+                    <a href="{{route('admin.categories')}}">
+                        <div class="text-tiny">Category</div>
                     </a>
                 </li>
                 <li>
                     <i class="icon-chevron-right"></i>
                 </li>
                 <li>
-                    <div class="text-tiny">New Brand</div>
+                    <div class="text-tiny">New Category</div>
                 </li>
             </ul>
         </div>
         <!-- new-category -->
         <div class="wg-box">
-            <form class="form-new-product form-style-1" action="{{route('admin.brands.store')}}" method="POST" enctype="multipart/form-data">
+            <form class="form-new-product form-style-1" action="{{route('admin.categories.store')}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <fieldset class="name">
-                    <div class="body-title">Brand Name <span class="tf-color-1">*</span></div>
-                    <input class="flex-grow" type="text" placeholder="Brand name" name="name"
+                    <div class="body-title">Category Name <span class="tf-color-1">*</span></div>
+                    <input class="flex-grow" type="text" placeholder="Category name" name="name"
                         tabindex="0" value="{{old('name')}}" aria-required="true" required="">
                 </fieldset>
                 @error('name') <span class="alert alert-danger">{{$message}}</span> @enderror
                 <fieldset class="name">
-                    <div class="body-title">Brand Slug <span class="tf-color-1">*</span></div>
-                    <input class="flex-grow" type="text" placeholder="Brand Slug" name="slug"
+                    <div class="body-title">Category Slug <span class="tf-color-1">*</span></div>
+                    <input class="flex-grow" type="text" placeholder="Category Slug" name="slug"
                         tabindex="0" value="{{old('slug')}}" aria-required="true" required="">
                 </fieldset>
 

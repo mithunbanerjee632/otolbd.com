@@ -85,7 +85,7 @@
                                     </a>
                                     <ul class="sub-menu">
                                         <li class="sub-menu-item">
-                                            <a href="add-brand.html" class="">
+                                            <a href="{{ route('admin.brands.add') }}" class="">
                                                 <div class="text">New Brand</div>
                                             </a>
                                         </li>
@@ -103,12 +103,12 @@
                                     </a>
                                     <ul class="sub-menu">
                                         <li class="sub-menu-item">
-                                            <a href="add-category.html" class="">
+                                            <a href="{{ route('admin.categories.add') }}" class="">
                                                 <div class="text">New Category</div>
                                             </a>
                                         </li>
                                         <li class="sub-menu-item">
-                                            <a href="categories.html" class="">
+                                            <a href="{{ route('admin.categories') }}" class="">
                                                 <div class="text">Categories</div>
                                             </a>
                                         </li>
@@ -449,11 +449,11 @@
                     <div class="main-content">
                         @yield('content')
 
-                     
+
 
 
                         <div class="bottom-page">
-                            <div class="body-text">Copyright © 2024 SurfsideMedia</div>
+                            <div class="body-text">Copyright © 2025 Atol Corporation</div>
                         </div>
                     </div>
 
@@ -464,8 +464,8 @@
 
     <script src="{{asset('js/jquery.min.js')}}"></script>
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('js/bootstrap-select.min.js')}}"></script>   
-    <script src="{{asset('js/sweetalert.min.js')}}"></script>    
+    <script src="{{asset('js/bootstrap-select.min.js')}}"></script>
+    <script src="{{asset('js/sweetalert.min.js')}}"></script>
     <script src="{{asset('js/apexcharts/apexcharts.js')}}"></script>
     <script src="{{asset('js/main.js')}}"></script>
     <script>
@@ -569,5 +569,5 @@
 
 @stack("script")
 </body>
- 
+
 </html>
