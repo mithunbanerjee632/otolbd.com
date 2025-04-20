@@ -159,7 +159,7 @@
                                 <span class="text-tiny">Drop your images here or select <span
                                         class="tf-color">click to browse</span></span>
                                 <input type="file" id="gFile" name="images[]" accept="image/*"
-                                multiple="">
+                                multiple>
                             </label>
                         </div>
                     </div>

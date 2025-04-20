@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Atol') }}</title>
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="surfside media" />
+    <meta name="author" content="atol corporation" />
     <link rel="shortcut icon" href="{{asset('assets/images/favicon.ico')}}" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com/">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
@@ -253,7 +253,7 @@
         padding-top: 8px;
         padding-bottom: 8px;
       }
-  
+
       .logo__image {
         max-width: 220px;
       }
@@ -266,13 +266,13 @@
           </svg>
           <button class="btn-close-lg position-absolute top-0 start-0 w-100"></button>
         </a>
-  
+
         <div class="logo">
           <a href="{{route('home.index')}}">
-            <img src="{{asset('assets/images/logo.png')}}" alt="Uomo" class="logo__image d-block" />
+            <img src="{{asset('assets/images/logo.png')}}" alt="atol corporation" class="logo__image d-block" />
           </a>
         </div>
-  
+
         <a href="#" class="header-tools__item header-tools__cart js-open-aside" data-aside="cartDrawer">
           <svg class="d-block" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use href="#icon_cart" />
@@ -280,7 +280,7 @@
           <span class="cart-amount d-block position-absolute js-cart-items-count">3</span>
         </a>
       </div>
-  
+
       <nav
         class="header-mobile__navigation navigation d-flex flex-column w-100 position-absolute top-100 bg-body overflow-auto">
         <div class="container">
@@ -296,13 +296,13 @@
               </button>
               <button class="btn-icon btn-close-lg search-popup__reset pb-0 me-2" type="reset"></button>
             </div>
-  
+
             <div class="position-absolute start-0 top-100 m-0 w-100">
               <div class="search-result"></div>
             </div>
           </form>
         </div>
-  
+
         <div class="container">
           <div class="overflow-hidden">
             <ul class="navigation__list list-unstyled position-relative">
@@ -310,7 +310,7 @@
                 <a href="{{route('home.index')}}" class="navigation__link">Home</a>
               </li>
               <li class="navigation__item">
-                <a href="shop.html" class="navigation__link">Shop</a>
+                <a href="{{ route('shop.index') }}" class="navigation__link">Shop</a>
               </li>
               <li class="navigation__item">
                 <a href="cart.html" class="navigation__link">Cart</a>
@@ -324,7 +324,7 @@
             </ul>
           </div>
         </div>
-  
+
         <div class="border-top mt-auto pb-2">
           <div class="customer-links container mt-4 mb-2 pb-1">
             <svg class="d-inline-block align-middle" width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -333,9 +333,9 @@
             </svg>
             <span class="d-inline-block ms-2 text-uppercase align-middle fw-medium">My Account</span>
           </div>
-  
-  
-  
+
+
+
           <ul class="container social-links list-unstyled d-flex flex-wrap mb-0">
             <li>
               <a href="#" class="footer__social-link d-block ps-0">
@@ -382,8 +382,8 @@
         </div>
       </nav>
     </div>
-  
-  
+
+
     <header id="header" class="header header-fullwidth header-transparent-bg">
       <div class="container">
         <div class="header-desk header-desk_type_1">
@@ -392,14 +392,14 @@
               <img src="{{asset('assets/images/logo.png')}}" alt="Uomo" class="logo__image d-block" />
             </a>
           </div>
-  
+
           <nav class="navigation">
             <ul class="navigation__list list-unstyled d-flex">
               <li class="navigation__item">
                 <a href="{{route('home.index')}}" class="navigation__link">Home</a>
               </li>
               <li class="navigation__item">
-                <a href="shop.html" class="navigation__link">Shop</a>
+                <a href="{{ route('shop.index') }}" class="navigation__link">Shop</a>
               </li>
               <li class="navigation__item">
                 <a href="cart.html" class="navigation__link">Cart</a>
@@ -412,7 +412,7 @@
               </li>
             </ul>
           </nav>
-  
+
           <div class="header-tools d-flex align-items-center">
             <div class="header-tools__item hover-container">
               <div class="js-hover__open position-relative">
@@ -424,7 +424,7 @@
                   <i class="btn-icon btn-close-lg"></i>
                 </a>
               </div>
-  
+
               <div class="search-popup js-hidden-content">
                 <form action="#" method="GET" class="search-field container">
                   <p class="text-uppercase text-secondary fw-medium mb-4">What are you looking for?</p>
@@ -439,7 +439,7 @@
                     </button>
                     <button class="btn-icon btn-close-lg search-popup__reset" type="reset"></button>
                   </div>
-  
+
                   <div class="search-popup__results">
                     <div class="sub-menu search-suggestion">
                       <h6 class="sub-menu__title fs-base">Quicklinks</h6>
@@ -453,7 +453,7 @@
                         <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Sweatshirt</a></li>
                       </ul>
                     </div>
-  
+
                     <div class="search-result row row-cols-5"></div>
                   </div>
                 </form>
@@ -482,17 +482,17 @@
                 </a>
               </div>
 
-        
+
             @endguest
-  
-            
-  
+
+
+
             <a href="wishlist.html" class="header-tools__item">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use href="#icon_heart" />
               </svg>
             </a>
-  
+
             <a href="cart.html" class="header-tools__item header-tools__cart">
               <svg class="d-block" width="20" height="20" viewBox="0 0 20 20" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -505,8 +505,8 @@
       </div>
     </header>
     @yield("content")
-  
-  
+
+
     <hr class="mt-5 text-secondary" />
     <footer class="footer footer_type_2">
       <div class="footer-middle container">
@@ -517,10 +517,10 @@
                 <img src="{{asset('assets/images/logo.png')}}" alt="SurfsideMedia" class="logo__image d-block" />
               </a>
             </div>
-            <p class="footer-address">123 Beach Avenue, Surfside City, CA 00000</p>
-            <p class="m-0"><strong class="fw-medium">contact@surfsidemedia.in</strong></p>
-            <p><strong class="fw-medium">+1 000-000-0000</strong></p>
-  
+            <p class="footer-address">Barapaika,Agailjhara,Barishal</p>
+            <p class="m-0"><strong class="fw-medium">mithunbanerjee632@gmail.com</strong></p>
+            <p><strong class="fw-medium">+880 1713574869</strong></p>
+
             <ul class="social-links list-unstyled d-flex flex-wrap mb-0">
               <li>
                 <a href="#" class="footer__social-link d-block">
@@ -565,7 +565,7 @@
               </li>
             </ul>
           </div>
-  
+
           <div class="footer-column footer-menu mb-4 mb-lg-0">
             <h6 class="sub-menu__title text-uppercase">Company</h6>
             <ul class="sub-menu__list list-unstyled">
@@ -576,7 +576,7 @@
               <li class="sub-menu__item"><a href="contact-2.html" class="menu-link menu-link_us-s">Contact Us</a></li>
             </ul>
           </div>
-  
+
           <div class="footer-column footer-menu mb-4 mb-lg-0">
             <h6 class="sub-menu__title text-uppercase">Shop</h6>
             <ul class="sub-menu__list list-unstyled">
@@ -587,7 +587,7 @@
               <li class="sub-menu__item"><a href="shop1.html" class="menu-link menu-link_us-s">Shop All</a></li>
             </ul>
           </div>
-  
+
           <div class="footer-column footer-menu mb-4 mb-lg-0">
             <h6 class="sub-menu__title text-uppercase">Help</h6>
             <ul class="sub-menu__list list-unstyled">
@@ -600,7 +600,7 @@
               <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Gift Card</a></li>
             </ul>
           </div>
-  
+
           <div class="footer-column footer-menu mb-4 mb-lg-0">
             <h6 class="sub-menu__title text-uppercase">Categories</h6>
             <ul class="sub-menu__list list-unstyled">
@@ -613,10 +613,10 @@
           </div>
         </div>
       </div>
-  
+
       <div class="footer-bottom">
         <div class="container d-md-flex align-items-center">
-          <span class="footer-copyright me-auto">©2024 Surfside Media</span>
+          <span class="footer-copyright me-auto">©2025 Atol Corporation</span>
           <div class="footer-settings d-md-flex align-items-center">
             <a href="privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms-conditions.html">Terms &amp;
               Conditions</a>
@@ -624,8 +624,8 @@
         </div>
       </div>
     </footer>
-  
-  
+
+
     <footer class="footer-mobile container w-100 px-5 d-md-none bg-body">
       <div class="row text-center">
         <div class="col-4">
@@ -637,7 +637,7 @@
             <span>Home</span>
           </a>
         </div>
-  
+
         <div class="col-4">
           <a href="index.html" class="footer-mobile__link d-flex flex-column align-items-center">
             <svg class="d-block" width="18" height="18" viewBox="0 0 18 18" fill="none"
@@ -647,7 +647,7 @@
             <span>Shop</span>
           </a>
         </div>
-  
+
         <div class="col-4">
           <a href="index.html" class="footer-mobile__link d-flex flex-column align-items-center">
             <div class="position-relative">
@@ -662,10 +662,10 @@
         </div>
       </div>
     </footer>
-  
+
     <div id="scrollTop" class="visually-hidden end-0"></div>
     <div class="page-overlay"></div>
-  
+
     <script src="{{asset('assets/js/plugins/jquery.min.js')}}"></script>
     <script src="{{asset('assets/js/plugins/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('assets/js/plugins/bootstrap-slider.min.js')}}"></script>
